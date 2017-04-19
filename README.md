@@ -1,13 +1,14 @@
 # hdinsight-storm-examples
+
+
 This repository contains complete and easy to use examples that demonstrate the power of Apache Storm on Microsoft Azure HDInsight.
 
-The .Net examples are applicable to all HDInsight Windows Storm clusters.
+The .Net and Java examples listed in this branch are applicable to **HDInsight v3.6 Linux Storm clusters**
 
-The Java examples are applicable to :
- * 3.3 and below versions of HDInsight Windows
- * 3.4 and below versions of HDInsight Linux Storm clusters.
- 
-For version 3.5+ Linux based HDInsight Storm clusters please look under HDI3.5 folder.
+For other HDInsight version specific examples please refer to the specific branch.
+Supported versions:
+* HDInsight v3.4
+* HDInsight v3.5
 
 ## Getting Started
 
@@ -16,16 +17,11 @@ For version 3.5+ Linux based HDInsight Storm clusters please look under HDI3.5 f
 **Getting Started page - [Getting Started with HDInsight Storm](https://azure.microsoft.com/en-us/documentation/articles/hdinsight-storm-overview/)**
 
 ### Repository structure
-
-1. End-to-end examples - Read more about them below
-  1. [EventCountExample](EventCountExample) - Scalability benchmark for Microsoft Azure EventHubs/Apache Kafka on Microsoft Azure HDInsight
-  2. [IotExample](IotExample) - Internet of things - connected cars scenario
-  3. [RealTimeETLExample](RealTimeETLExample) - Web request aggregation into HBase
-2. [SCPNetExamples](SCPNetExamples) - Examples that show API usage of SCP.Net
-3. [lib](lib) - Java dependencies
-4. [scripts](scripts) - Automation scripts
-5. [Templates](templates) - Azure services templates
-6. [tools](tools) - Helper tools
+1. [Examples](Examples) - Simple and End-to-End examples of working with various Microsoft, and third party technologies.
+2. [lib](lib) - Java dependencies
+3. [scripts](scripts) - Automation scripts
+4. [Templates](templates) - Azure services templates
+5. [tools](tools) - Helper tools
 
 ### Running the examples
 Each of the examples folder contains a ```run.bat``` that does the following:
@@ -48,6 +44,41 @@ If you just want to build the source code you can use the ```build.bat``` in eac
 If you modified some source and wish to re-deploy the topologies, you can build using ```build.bat``` and submit the topologies using ```execute.ps1```
 
 ## Examples
+Simple (POC) and End-to-End examples of integrating  HDInsight Storm (and SCP.Net) with popular technologies.
+
+### Examples Layout
+
+1. [Simple](Simple) - Proof-of-concept implementations to showcase HDInsight storm integration with:
+    * [Windows Azure Blob Store (WASB)](examples/Simple/WasbWriterTopology)
+    * [Azure Datalake Store (ADLS)](examples/Simple/AdlWriterTopology)
+    * HBase
+    * Elastic Search
+
+2. [SCPNet - Simple](Simple/SCPNet) - proof-of-concept implementations to showcase HDInsight storm integration using SCPNet topologies with:
+    * [Windows Azure Blob Store (WASB)](examples/Simple/SCPNet/WasbWriterTopology)
+    * [Azure Datalake Store (ADLS)](examples/Simple/SCPNet/AdlWriterTopology)
+    * HBase
+    * Elastic Search
+    
+3. [EndToEnd](EndToEnd) - Production ready implementations that showcase HDInsight Storm integration with:
+    * EventHub and HBase
+    * Kafka and HBase
+    * Kafka and ADL
+    * Kafka and WASB
+    * IOTHub and HBase
+    * EventHub and DocumentDB
+    * ServiceBus and HBase
+
+4. [SCPNet - EndToEnd](EndToEnd/SCPNet) - Production ready implementations that showcase HDInsight Storm integration using SCPNet topologies with:
+    * EventHub and HBase
+    * Kafka and HBase
+    * Kafka and ADL
+    * Kafka and WASB
+    * IOTHub and HBase
+    * EventHub and DocumentDB
+    * ServiceBus and HBase
+    
+**Note:** Each example comes with a paired SCPNet implementation that showcases C# based topologies to achieve the same goal as the intended example.
 There are multiple end-to-end examples included in this repository that showcase different topologies that you can build and run against HDInsight Storm.
 HDInsight provides users the option to write applications in language of their choice and exposes Storm REST APIs as well as additional web interfaces for remote topology submission and management.
 
