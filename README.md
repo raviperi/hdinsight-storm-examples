@@ -1,5 +1,8 @@
 # hdinsight-storm-examples
 
+**NOTE: The examples are being rewritten to ensure compatibility with the latest HDInsight's Storm offering 
+(HDI 3.6, Storm 1.1.0.x)
+The layout of the repository is also being updated to organize code for easier discoverability.**
 
 This repository contains complete and easy to use examples that demonstrate the power of Apache Storm on Microsoft Azure HDInsight.
 
