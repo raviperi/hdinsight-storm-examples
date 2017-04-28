@@ -139,7 +139,8 @@ public class SimpleWasbWriterTopology {
 		builder.setSpout("textgenerator", spout, spoutParallelism);
 		FileNameFormat fileNameFormat2 = new HourlyFileNameFormat().withPath(wasbFileDirPath);
 		AbstractAzureHdfsBolt wasbBolt = new AzureWasbBolt()
-				.withRecordFormat(new DelimitedRecordFormat().withFieldDelimiter(",")).withFsUrl(wasbUrl)
+				.withRecordFormat(new DelimitedRecordFormat().withFieldDelimiter(","))
+				.withFsUrl(wasbUrl)
 				.withRotationPolicy(new FileSizeRotationPolicy(fileRotationSize, Units.MB))
 				.withFileNameFormat(fileNameFormat2);
 

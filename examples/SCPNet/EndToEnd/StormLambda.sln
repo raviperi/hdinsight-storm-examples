@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScpLambdaEventGeneratorTopology", "ScpLambdaEventGeneratorTopology\ScpLambdaEventGeneratorTopology.csproj", "{2431934B-45E3-4D08-8041-47EE44453CF6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScpLambdaTopology", "ScpLambdaTopology\ScpLambdaTopology.csproj", "{893D89A0-A671-48DD-B1D6-E94EF763FCD5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StormLambdaCommon", "StormLambdaCommon\StormLambdaCommon.csproj", "{A33D496D-F9DC-4C6E-8E95-80BB67720FB8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2431934B-45E3-4D08-8041-47EE44453CF6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2431934B-45E3-4D08-8041-47EE44453CF6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2431934B-45E3-4D08-8041-47EE44453CF6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2431934B-45E3-4D08-8041-47EE44453CF6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{893D89A0-A671-48DD-B1D6-E94EF763FCD5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{893D89A0-A671-48DD-B1D6-E94EF763FCD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{893D89A0-A671-48DD-B1D6-E94EF763FCD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{893D89A0-A671-48DD-B1D6-E94EF763FCD5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A33D496D-F9DC-4C6E-8E95-80BB67720FB8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A33D496D-F9DC-4C6E-8E95-80BB67720FB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A33D496D-F9DC-4C6E-8E95-80BB67720FB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A33D496D-F9DC-4C6E-8E95-80BB67720FB8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
